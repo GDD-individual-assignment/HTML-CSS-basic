@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML/CSS 기초 과제</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="intro-header">
+    <h1>안녕하세요, 신입 개발자 조유하입니다!</h1>
+    <p>HTML과 CSS를 공부하며 만든 페이지입니다.</p>
+  </header>
+  <main>
+    <section class="social-links">
+      <h2>Contact Me</h2>
+      <div class="button-container">
+        <button class="btn">
+          <a href="https://github.com/HelloAIJ" target="_blank" rel="noopener noreferrer">
+          GitHub
+          </a>
+        </button>
+        <button class="btn">
+          <a href="https://www.notion.so/2b69bd2c2e728027bc42ef6623efde68" target="_blank" rel="noopener noreferrer">
+          Blog
+          </a>
+        </button>
+        <div class="btn box">
+          <details class="email-dropdown">
+            <summary title="https://formspree.io/f/xanrgney">Email</summary>
+      	      <div class="dropdown-menu">                         
+    	          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=https://formspree.io/f/xanrgney" 
+								target="_blank" rel="noopener noreferrer" class="menu-item" 
+								title="기본메일클라이언트로 바로 보내기">바로 보내기
+								</a>
+                <a class="menu-item" 
+                onclick="navigator.clipboard.writeText('https://formspree.io/f/xanrgney');
+								alert('주소가 복사되었습니다!');">주소 복사하기
+								</a>
+              </div>
+          </details>
+        </div>
+      </div>
+      <div class="email-form">
+        <form action="https://formspree.io/f/xanrgney" method="POST">
+          <div class="email-box adress">
+      	  	<label>이메일 (답장 받으실 곳)</label><br>
+      	    <input type="email" name="email" required placeholder="example@email.com">
+      		</div>
+      		<div class="email-box message">
+            <label>메시지</label><br>
+            <textarea name="message" 
+						required placeholder="안녕하세요! 스팸 메일 방지를 위해 
+						Formspree을 적용하였습니다.
+						 메세지를 작성하시고 보내기를 누르시면 
+						 진짜 제 메일로 메세지가 보내집니다"></textarea>
+          </div>
+          <button type="submit" class="email-send-btn">
+            보내기
+          </button>
+        </form>
+      </div>
+      </section>
+      <section class="photo-gallery">
+          <h2>My Gallery</h2>
+          <div class="grid-container">
+						<div class="grid-item"><p><img src="./asset/image1.jpg" alt="사진 1">사진1</p></div>
+						<div class="grid-item"><p><img src="./asset/image2.jpg" alt="사진 2">사진2</p></div>
+            <div class="grid-item"><p><img src="./asset/image3.jpg" alt="사진 3">사진3</p></div>
+						<div class="grid-item"><p><img src="https://images.pexels.com/photos/2825749/pexels-photo-2825749.jpeg" alt="안 뜨는 경우 링크 확인">사진4</p></div>
+          </div>
+      </section>
+     <section class="favorite-video">
+          <h2>Favorite Video</h2>
+          <div class="video-wrapper">
+              <iframe 
+                  width="560" 
+                  height="315" 
+                  src="https://www.youtube.com/embed/wRvOyYLN804?si=TFG6ZjQZPy2E-NLD" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+              </iframe>
+          </div>
+      </section>
+  </main>
+ <footer>
+      <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
